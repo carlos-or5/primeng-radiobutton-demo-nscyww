@@ -1,0 +1,38 @@
+<table> 
+	<tr>
+		<td>
+	<p-radioButton name="city" value="Chicago" [(ngModel)]="city" inputId="city1" (click)="handleRadioButtonClick()"></p-radioButton>
+	<label for="city1">ETA</label>
+		</td>
+		<td>
+		<p-radioButton name="sort" value="asc" [(ngModel)]="eta" inputId="sort1" [disabled]="isEtaOptionsDisabled"></p-radioButton>
+		<label for="sort1">Ascendente</label>
+	
+		<p-radioButton name="sort" value="desc" [(ngModel)]="eta" inputId="sort2" [disabled]="isEtaOptionsDisabled"></p-radioButton>
+		<label for="sort2">Descendente</label>
+</td>
+<td>
+	<p-radioButton name="city" value="Los Angeles" [(ngModel)]="city" inputId="city2" (click)="handleRadioButtonClick()"></p-radioButton>
+	<label for="city2">ETD</label>
+</td>
+<td>
+	<div class="container">
+		<p-radioButton name="sort" value="asc" [(ngModel)]="etd" inputId="sort3" [disabled]="isEtdOptionsDisabled"></p-radioButton>
+		<label for="sort3">Ascendente</label>
+	
+		<p-radioButton name="sort" value="desc" [(ngModel)]="etd" inputId="sort4" [disabled]="isEtdOptionsDisabled"></p-radioButton>
+		<label for="sort4">Descendente</label>
+	</div>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+	<p-radioButton name="city" value="New York" [(ngModel)]="city" inputId="city3" (click)="handleRadioButtonClick()"></p-radioButton>
+	<label for="city3">New York</label>
+
+	<p-radioButton name="city" value="San Francisco" [(ngModel)]="city" inputId="city4" (click)="handleRadioButtonClick()"></p-radioButton>
+	<label for="city4">San Francisco</label>
+</tr>
+</table>
+
